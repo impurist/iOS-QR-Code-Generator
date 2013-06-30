@@ -26,8 +26,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     [barcode setupQRCode:code];
-    self.imageView.image = barcode.qRBarcode;
-
+    UIImage *qrCode = barcode.qRBarcode;
+    self.imageView.image = qrCode;
+  
 //    Uncomment for one dimensional code 128 barcode.
 //    [barcode setupOneDimBarcode:code type:CODE_128];
 //    self.imageView.image = barcode.oneDimBarcode;
